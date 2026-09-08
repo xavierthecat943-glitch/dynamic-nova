@@ -1,0 +1,31 @@
+# Ignore build artifacts and editor files
+
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# QML/Qt
+build-*/
+qmlcache/
+moc_*
+ui_*.h
+Makefile
+CMakeFiles/
+CMakeCache.txt
+
+# Install artifacts
+/dist
+/*.deb
+
+# Node/JS (if using tooling)
+node_modules/

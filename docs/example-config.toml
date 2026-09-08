@@ -1,0 +1,29 @@
+# Example config for Dynamic Nova
+
+[general]
+theme = "default"
+font = "Noto Sans 10"
+update_interval_ms = 1000
+qml_path = "$XDG_DATA_HOME/dynamic-nova/qml"
+
+[[bars]]
+monitor = "primary"
+modules = ["workspaces","title","cpu","memory","network","battery","clock"]
+height = 28
+position = "top"
+margin = 6
+
+[modules.workspaces]
+show_icons = true
+
+[modules.cpu]
+format = "CPU: {usage}%"
+
+[modules.memory]
+format = "RAM: {used_mb}MB/{total_mb}MB"
+
+[modules.network]
+interface = "wlan0"
+
+[modules.clock]
+format = "%Y-%m-%d %H:%M"

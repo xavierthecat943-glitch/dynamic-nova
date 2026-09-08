@@ -1,0 +1,12 @@
+[Unit]
+Description=Dynamic Nova bar (per-user)
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/dynamic-nova --config %h/.config/dynamic-nova/config.toml
+Restart=on-failure
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target
